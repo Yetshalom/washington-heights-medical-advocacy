@@ -4,64 +4,101 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Washington Heights Medical Advocacy</title>
-  <style>
-    :root{ --navy:#0b1c2d; --bg:#fff; --soft:#f6f7f9; --text:#111; --muted:#4a4a4a; --border:#e6e6e6; --danger:#b00020; --radius:16px; --shadow:0 10px 24px rgba(0,0,0,.08);}
-    *{box-sizing:border-box;}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55;color:var(--text);background:var(--bg);}
-    header{background:linear-gradient(180deg,#0b1c2d 0%,#06101a 100%);color:#fff;padding:42px 18px 18px;}
-    .wrap{max-width:1080px;margin:0 auto;}
-    h1{margin:0 0 10px;font-size:34px;}
-    .sub{margin:0;color:#e9eef5;}
-    .freebadge{margin-top:10px;font-weight:800;background:#1c3b5a;padding:8px 14px;border-radius:999px;display:inline-block;}
-    .topbtns{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;}
-    .btn{padding:11px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.55);text-decoration:none;font-weight:800;color:#fff;}
-    .btn.primary{background:#fff;color:var(--navy);}
-    main{max-width:1080px;margin:0 auto;padding:18px;}
-    .card{border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin:14px 0;box-shadow:var(--shadow);}
-    .danger{border-left:6px solid var(--danger);padding-left:12px;}
-    .mini{color:var(--muted);font-size:14px;}
-    footer{border-top:1px solid var(--border);margin-top:22px;padding:18px;color:var(--muted);font-size:14px;}
-  </style>
+  <meta name="description" content="Free community health navigation for Washington Heights: uninsured options, mental health support, senior help, transportation guidance, and medication cost help." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<header>
-  <div class="wrap">
-    <h1>Washington Heights Medical Advocacy</h1>
-    <p class="sub">A community-run health navigation service for Washington Heights residents.</p>
-    <div class="freebadge">100% FREE COMMUNITY HELP • NO FEES • NO INSURANCE SALES</div>
-
-    <div class="topbtns">
-      <a class="btn primary" href="hub.html">All Resources (Start Here)</a>
-      <a class="btn" href="help.html">Request Free Help</a>
-      <a class="btn" href="clinics.html">Clinics</a>
-      <a class="btn" href="nyccare.html">NYC Care</a>
-      <a class="btn" href="narcan.html">Free Narcan</a>
+<div class="topbar">
+  <div class="nav">
+    <div class="brand"><span class="dot"></span>Washington Heights Medical Advocacy</div>
+    <div class="navlinks">
+      <a class="pill primary" href="help.html">Request Help</a>
+      <a class="pill" href="hub.html">All Resources</a>
+      <a class="pill" href="clinics.html">Clinics</a>
+      <a class="pill" href="nyccare.html">NYC Care</a>
+      <a class="pill" href="narcan.html">Narcan</a>
+      <a class="pill ghost" href="es.html">Español</a>
     </div>
   </div>
-</header>
+</div>
 
-<main>
+<div class="container hero">
+  <div class="hero-grid">
 
-  <div class="card danger">
-    <strong>Emergency?</strong> Call 911 immediately.
+    <div class="card glow">
+      <p class="kicker">FREE COMMUNITY SERVICE • WASHINGTON HEIGHTS</p>
+      <h1 class="h1">Real help navigating care — especially when the system is confusing.</h1>
+      <p class="sub">
+        We help residents and families find care (including uninsured options), connect to mental health support,
+        support seniors with appointments/forms, plan transportation, and reduce medication costs.
+      </p>
+
+      <div class="badge">✅ 100% Free • No fees • No insurance sales • Not emergency services</div>
+
+      <div class="callouts">
+        <a class="cta primary" href="help.html">Request Free Help</a>
+        <a class="cta" href="hub.html">Start Here: All Resources</a>
+        <a class="cta" href="clinics.html">Find a Clinic</a>
+      </div>
+
+      <hr class="sep" />
+
+      <div class="grid cols-3">
+        <div class="card strip danger">
+          <p class="kicker">Emergency</p>
+          <div class="h2">Call 911</div>
+          <p class="mini">Trouble breathing, chest pain, severe bleeding, overdose, stroke symptoms, immediate danger.</p>
+        </div>
+
+        <div class="card strip warn">
+          <p class="kicker">Mental health crisis</p>
+          <div class="h2">Call/Text 988</div>
+          <p class="mini">24/7 free crisis support by phone/text/chat.</p>
+        </div>
+
+        <div class="card strip good">
+          <p class="kicker">NYC support</p>
+          <div class="h2">NYC Well</div>
+          <p class="mini">Call 1-888-692-9355 • Text WELL to 65173 • Chat via NYC 988 site.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="kicker">Quick paths</p>
+      <div class="h2">What do you need today?</div>
+
+      <div class="callouts">
+        <a class="cta" href="hub.html#mental">Mental health</a>
+        <a class="cta" href="hub.html#care">Uninsured / care</a>
+        <a class="cta" href="hub.html#seniors">Help for seniors</a>
+        <a class="cta" href="hub.html#transport">Transportation</a>
+        <a class="cta" href="hub.html#meds">Medication costs</a>
+        <a class="cta" href="hub.html#substance">Narcan / overdose</a>
+      </div>
+
+      <details>
+        <summary>What we do (and don’t do)</summary>
+        <ul>
+          <li><strong>We do:</strong> navigation, scheduling help, next-step planning, referrals to legitimate services, paperwork support.</li>
+          <li><strong>We do not:</strong> provide medical advice, diagnose, prescribe, or handle emergencies.</li>
+        </ul>
+      </details>
+
+      <p class="mini" style="margin-top:12px;">
+        Spanish resources: click <strong>Español</strong> in the top nav.
+      </p>
+    </div>
+
   </div>
 
-  <div class="card">
-    <h2>Everything on this site is free</h2>
-    <ul>
-      <li>We do not charge money</li>
-      <li>We do not sell insurance</li>
-      <li>We are not connected to any company</li>
-      <li>We are volunteers helping you navigate the system</li>
-    </ul>
+  <div class="footer">
+    <div class="smallcaps">Important</div>
+    This website provides general information and free navigation help. It is not medical advice and not emergency services.
+    For emergencies call <strong>911</strong>.
   </div>
-
-</main>
-
-<footer>
-  This website provides general information and navigation help. It is not medical advice. For emergencies call 911.
-</footer>
+</div>
 
 </body>
 </html>
