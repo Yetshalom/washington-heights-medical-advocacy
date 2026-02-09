@@ -3,53 +3,91 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Clinics • Washington Heights Medical Advocacy</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; line-height:1.6; color:#111; }
-    header { background:#0b1c2d; color:#fff; padding:18px; }
-    header .wrap, main { max-width: 980px; margin: 0 auto; }
-    nav a { display:inline-block; margin:6px 10px 0 0; padding:10px 12px; border-radius:10px; text-decoration:none; border:1px solid #fff; color:#fff; }
-    main { padding: 18px; }
-    h1 { margin: 10px 0 0; }
-    .card { border:1px solid #e6e6e6; border-radius:14px; padding:14px; margin:14px 0; }
-    .btn { display:inline-block; margin:8px 10px 0 0; padding:10px 12px; border-radius:10px; text-decoration:none; border:1px solid #0b1c2d; color:#0b1c2d; font-weight:bold; }
-    .muted { color:#444; font-size:14px; }
-    .warn { border-left:5px solid #c00; padding-left:10px; }
-  </style>
+  <title>Clinic Directory • Washington Heights Medical Advocacy</title>
+  <meta name="description" content="Community clinics and care options for Washington Heights residents." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="en.html">English</a>
-        <a href="es.html">Español</a>
-        <a href="nyccare.html">NYC Care</a>
-        <a href="narcan.html">Free Narcan</a>
-        <a href="help.html">Get Help</a>
-      </nav>
-      <h1>Clinics in & Near Washington Heights</h1>
-      <p class="muted">Starter list — we can keep adding more locations.</p>
-      <p class="muted warn"><strong>Emergency?</strong> Call <strong>911</strong>.</p>
-    </div>
-  </header>
 
-  <main>
+<div class="topbar">
+  <div class="nav">
+    <div class="brand"><span class="dot"></span>WH Medical Advocacy</div>
+    <div class="navlinks">
+      <a class="pill" href="index.html">Home</a>
+      <a class="pill" href="hub.html">All Resources</a>
+      <a class="pill" href="help.html">Request Help</a>
+      <a class="pill primary" href="clinics.html">Clinics</a>
+      <a class="pill" href="nyccare.html">NYC Care</a>
+      <a class="pill" href="narcan.html">Narcan</a>
+    </div>
+  </div>
+</div>
+
+<div class="container" style="margin-top:18px;">
+  <div class="card glow">
+    <p class="kicker">CLINIC DIRECTORY</p>
+    <div class="h2">Find community care in Washington Heights</div>
+    <p class="sub">
+      Many clinics offer primary care and can connect patients to behavioral health, specialty care, and financial counseling.
+      If you’re unsure where to go, use <strong>Request Help</strong>.
+    </p>
+    <div class="callouts">
+      <a class="cta primary" href="help.html">Request Help</a>
+      <a class="cta" href="hub.html#care">Uninsured options</a>
+      <a class="cta" href="hub.html#mental">Mental health</a>
+    </div>
+  </div>
+
+  <div class="grid cols-2" style="margin-top:14px;">
     <div class="card">
-      <h2>Community Healthcare Network (CHN) — Washington Heights Health Center</h2>
-      <p><strong>Address:</strong> 511 W 157th St, New York, NY 10032</p>
-      <p><strong>Phone:</strong> <a href="tel:+12127817979">(212) 781-7979</a></p>
-      <p><strong>Hours:</strong> Mon 9–5, Tue 9–7, Wed 9–5, Thu 9–5, Fri 9–5 (Closed Sat/Sun)</p>
-      <p class="muted">Primary care + multiple services. Languages include English & Spanish.</p>
-      <a class="btn" href="https://www.google.com/maps?q=511+W+157th+St,+New+York,+NY+10032" target="_blank" rel="noopener">Directions</a>
-      <a class="btn" href="https://www.chnnyc.org/center/chn-washington-heights/" target="_blank" rel="noopener">Website</a>
+      <p class="kicker">Featured</p>
+      <div class="h2">Community Healthcare Network (CHN)</div>
+      <p class="mini">
+        511 W 157th St, New York, NY 10032<br>
+        Phone: <a href="tel:+12127817979"><strong>(212) 781-7979</strong></a>
+      </p>
+      <div class="callouts">
+        <a class="cta primary" target="_blank" rel="noopener" href="https://www.google.com/maps?q=511+W+157th+St,+New+York,+NY+10032">Directions</a>
+        <a class="cta" href="help.html">Help scheduling</a>
+      </div>
+      <p class="mini">Note: hours/services can change — call ahead.</p>
     </div>
 
     <div class="card">
-      <h2>Need help choosing where to go?</h2>
-      <p>We can help you pick the right place based on what you need and help you prepare for the phone call.</p>
-      <a class="btn" href="help.html">Request Help</a>
+      <p class="kicker">NYC Health + Hospitals</p>
+      <div class="h2">Public hospital system options</div>
+      <p class="mini">
+        NYC Health + Hospitals offers primary care and specialty services and is the home system for <strong>NYC Care</strong>.
+      </p>
+      <div class="callouts">
+        <a class="cta primary" href="nyccare.html">NYC Care</a>
+        <a class="cta" href="help.html">Ask us where to go</a>
+      </div>
     </div>
-  </main>
+  </div>
+
+  <div class="card" style="margin-top:14px;">
+    <p class="kicker">Need something specific?</p>
+    <div class="h2">We can help match you to the right clinic</div>
+    <ul>
+      <li>Primary care / checkups</li>
+      <li>Women’s health</li>
+      <li>Pediatrics</li>
+      <li>Behavioral health (therapy/psychiatry)</li>
+      <li>Specialist referrals</li>
+    </ul>
+    <div class="callouts">
+      <a class="cta primary" href="help.html">Request Help</a>
+      <a class="cta" href="hub.html">Back to All Resources</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="smallcaps">Important</div>
+    This list is informational. We recommend calling ahead to confirm eligibility, hours, and documentation needed.
+    For emergencies call <strong>911</strong>.
+  </div>
+</div>
+
 </body>
 </html>
