@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Request Free Help • NYC Medical Advocates</title>
-  <meta name="description" content="Request free navigation help from NYC Medical Advocates." />
+  <title>All Resources • NYC Medical Advocates</title>
+  <meta name="description" content="All NYC Medical Advocates resources: mental health, uninsured care, seniors, transportation, medication costs, bills & paperwork." />
   <link rel="stylesheet" href="./styles.css?v=4" />
 </head>
 <body>
@@ -14,8 +14,8 @@
     <div class="brand"><span class="dot"></span>NYC Medical Advocates</div>
     <div class="navlinks">
       <a class="pill" href="index.html">Home</a>
-      <a class="pill" href="hub.html">All Resources</a>
-      <a class="pill primary" href="help.html">Request Help</a>
+      <a class="pill primary" href="hub.html">All Resources</a>
+      <a class="pill" href="help.html">Request Help</a>
       <a class="pill" href="resources.html">Directory</a>
       <a class="pill" href="tel:+12018225428">📞 Call/Text</a>
       <a class="pill ghost" href="es.html">Español</a>
@@ -25,66 +25,93 @@
 
 <div class="container" style="margin-top:18px;">
   <div class="card glow">
-    <p class="kicker">REQUEST FREE HELP</p>
-    <div class="h2">Free community navigation support</div>
+    <p class="kicker">START HERE</p>
+    <div class="h2">All resources in one place</div>
     <p class="sub">
-      This is a <strong>free</strong> volunteer service. We can help you find care, schedule appointments, understand next steps,
-      explore uninsured options, reduce medication costs, understand medical bills, and connect to mental health resources.
-      We do <strong>not</strong> provide medical advice, diagnosis, or emergency services.
+      We provide <strong>free navigation help</strong> (not medical advice, not emergency services).
+      If you’re unsure where to begin, request help and we’ll guide you.
     </p>
     <div class="badge">✅ Free • No fees • No insurance sales • Not emergency services</div>
-
-    <div class="grid cols-3" style="margin-top:14px;">
-      <div class="card strip danger">
-        <p class="kicker">Emergency</p>
-        <div class="h2">Call 911</div>
-        <p class="mini">If someone is in immediate danger or has life-threatening symptoms.</p>
-      </div>
-      <div class="card strip warn">
-        <p class="kicker">Mental health crisis</p>
-        <div class="h2">Call/Text 988</div>
-        <p class="mini">Free crisis support 24/7 by phone/text/chat.</p>
-      </div>
-      <div class="card strip good">
-        <p class="kicker">NYC Well</p>
-        <div class="h2">1-888-692-9355</div>
-        <p class="mini">Text WELL to 65173 • Chat via NYC 988 site.</p>
-      </div>
-    </div>
-
-    <hr class="sep" />
-
-    <div class="h2">Prefer to call or text?</div>
-    <p class="sub">Call or text us for free help. If we miss you, leave a voicemail and we’ll get back to you.</p>
     <div class="callouts">
-      <a class="cta primary" href="tel:+12018225428">📞 Call 201-822-5428</a>
-      <a class="cta" href="sms:+12018225428">💬 Text 201-822-5428</a>
+      <a class="cta primary" href="help.html">Request Free Help</a>
+      <a class="cta" href="tel:+12018225428">📞 Call/Text</a>
+      <a class="cta" href="resources.html">Directory</a>
     </div>
-    <p class="mini">Calls/texts returned by volunteers. Not a medical advice line. For emergencies call 911. For crisis support call/text 988.</p>
+  </div>
 
-    <hr class="sep" />
+  <div class="grid cols-2" style="margin-top:14px;">
+    <div class="card strip warn" id="mental">
+      <p class="kicker">Mental health</p>
+      <div class="h2">Crisis and support</div>
+      <ul>
+        <li><strong>Crisis:</strong> Call/Text <strong>988</strong> (24/7)</li>
+        <li><strong>NYC:</strong> NYC Well supports calls/text/chat</li>
+      </ul>
+      <div class="callouts">
+        <a class="cta primary" href="https://988lifeline.org/" target="_blank" rel="noopener">988 Lifeline</a>
+        <a class="cta" href="https://nyc988.cityofnewyork.us/en/get-help-now/" target="_blank" rel="noopener">NYC 988 / NYC Well</a>
+      </div>
+      <p class="mini">Emergency: 911.</p>
+    </div>
 
-    <div class="h2">Submit a request (form)</div>
-    <p class="mini">Fill this out and a volunteer will contact you.</p>
+    <div class="card strip" id="care">
+      <p class="kicker">Uninsured / care</p>
+      <div class="h2">Find care options</div>
+      <ul>
+        <li>NYC Care (NYC Health + Hospitals)</li>
+        <li>NY State of Health (insurance marketplace)</li>
+      </ul>
+      <div class="callouts">
+        <a class="cta primary" href="nyccare.html">NYC Care info</a>
+        <a class="cta" href="https://nystateofhealth.ny.gov/" target="_blank" rel="noopener">NY State of Health</a>
+      </div>
+    </div>
 
-    <iframe
-      title="NYC Medical Advocates Request Help Form"
-      src="https://docs.google.com/forms/d/e/1FAIpQLSeCfmMq1RNitvftZcz01y6F4MdtkhTU7YBRRU74-Y8vuYIISw/viewform?embedded=true"
-      style="height:1100px;"
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-      Loading…
-    </iframe>
+    <div class="card strip" id="seniors">
+      <p class="kicker">Help for seniors</p>
+      <div class="h2">Appointments, forms, benefits</div>
+      <p class="mini">We can help with scheduling, paperwork checklists, and finding the right office to call.</p>
+      <div class="callouts">
+        <a class="cta primary" href="help.html">Request Help</a>
+        <a class="cta" href="resources.html#language">Language access</a>
+      </div>
+    </div>
 
-    <details>
-      <summary>What happens after you submit?</summary>
-      <ol>
-        <li>We review your request.</li>
-        <li>A volunteer contacts you (phone/email).</li>
-        <li>We provide next steps: where to go, what to ask, and how to schedule.</li>
-      </ol>
-      <p class="mini">We don’t diagnose or provide medical advice — we help with navigation and logistics.</p>
-    </details>
+    <div class="card strip" id="transport">
+      <p class="kicker">Transportation</p>
+      <div class="h2">Getting to appointments</div>
+      <ul>
+        <li>MTA trip planning</li>
+        <li>Access-A-Ride</li>
+        <li>Fair Fares NYC</li>
+      </ul>
+      <div class="callouts">
+        <a class="cta primary" href="https://new.mta.info/" target="_blank" rel="noopener">MTA</a>
+        <a class="cta" href="https://new.mta.info/accessibility/access-a-ride" target="_blank" rel="noopener">Access-A-Ride</a>
+        <a class="cta" href="https://www.nyc.gov/site/fairfares/index.page" target="_blank" rel="noopener">Fair Fares NYC</a>
+      </div>
+    </div>
+
+    <div class="card strip" id="meds">
+      <p class="kicker">Medication costs</p>
+      <div class="h2">Lower prescription costs</div>
+      <p class="mini">We can help you prepare questions to ask your pharmacy/clinic (generic options, assistance programs).</p>
+      <div class="callouts">
+        <a class="cta primary" href="resources.html#meds">More links</a>
+        <a class="cta" href="help.html">Request Help</a>
+      </div>
+    </div>
+
+    <div class="card strip good" id="bills">
+      <p class="kicker">Bills & paperwork</p>
+      <div class="h2">Understand bills and next steps</div>
+      <p class="mini">Bills are one of the most confusing parts of healthcare. We help you figure out who to call and what to ask.</p>
+      <div class="callouts">
+        <a class="cta primary" href="bills.html">Bills & Paperwork</a>
+        <a class="cta" href="resources.html#bills">Bills directory links</a>
+      </div>
+      <p class="mini">We provide navigation support, not legal advice.</p>
+    </div>
   </div>
 
   <div class="footer">
